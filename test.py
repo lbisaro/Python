@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 
 CHROMEDRIVER_PATH = '/usr/local/bin/chromedriver'
+
 options = Options()
 options.add_argument('--headless')
 
