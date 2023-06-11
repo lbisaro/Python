@@ -12,7 +12,7 @@ options.add_argument('--headless')
 
 service = Service(executable_path=CHROMEDRIVER_PATH)
 driver = webdriver.Chrome(service=service,options=options)
-driver.implicitly_wait(10)
+driver.implicitly_wait(15)
 
 url = 'https://www.binance.com/es/support/announcement/nuevas-criptos-listadas?c=48&navId=48'
 driver.get(url)
