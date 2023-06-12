@@ -1,11 +1,15 @@
 from datetime import datetime
 
-
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
+import mysql as database
+
+database.dbClose()
+
+quit()
 CHROMEDRIVER_PATH = '/usr/local/bin/chromedriver'
 options = Options()
 options.add_argument('--headless')
